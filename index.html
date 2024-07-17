@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="dealForm">
+        <div class="container">
+            <div class="section">
+                <h3>Client details</h3>
+                <input type="text" id="firstName" placeholder="First name" required>
+                <input type="text" id="lastName" placeholder="Last name" required>
+                <input type="tel" id="phone" placeholder="Phone" required>
+                <input type="email" id="email" placeholder="Email (optional)">
+            </div>
+
+            <div class="section">
+                <h3>Job type</h3>
+                <select id="jobType" required>
+                    <option value="">Select job type</option>
+                    <!-- Параметри -->
+                </select>
+                <select id="jobSource" required>
+                    <option value="">Select job source</option>
+                    <!-- Параметри -->
+                </select>
+                <textarea id="jobDescription" placeholder="Job description (optional)"></textarea>
+            </div>
+
+            <div class="section">
+                <h3>Service location</h3>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="state" placeholder="State" required>
+                <div class="row">
+                    <input type="text" id="zipCode" placeholder="Zip code" required>
+                    <select id="area" required>
+                        <option value="">Select area</option>
+                        <!-- Параметри -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Scheduled</h3>
+                <input type="date" id="startDate" required>
+                <div class="row">
+                    <input type="time" id="startTime" required>
+                    <input type="time" id="endTime" required>
+                </div>
+                <select id="testSelect" required>
+                    <option value="">Select technician</option>
+                    <!-- Параметри -->
+                </select>
+            </div>
+
+            <div class="button-container">
+                <button type="button" class="create-job-button" onclick="submitForm()">Create job</button>
+                <button type="button" class="save-info-button" onclick="saveInfo()">Save info</button>
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
