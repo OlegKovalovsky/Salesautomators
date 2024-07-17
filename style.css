@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    gap: 20px;
+}
+
+.section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 48%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.section input,
+.section textarea,
+.section select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.section input:focus,
+.section textarea:focus,
+.section select:focus {
+    border-color: #007bff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px !important; /* Заокруглення кнопок з пріоритетом */
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold; /* Жирний текст */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    min-width: 100px;
+    display: inline-block;
+}
+
+.create-job-button {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.create-job-button:hover {
+    background-color: #ffca2c;
+}
+
+.create-job-button:active {
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 16px; /* Збільшення тексту */
+}
+
+.save-info-button {
+    background-color: #6c757d;
+}
+
+.save-info-button:hover {
+    background-color: #5a6268;
+}
+
+.save-info-button:active {
+    background-color: #5a6268;
+    font-size: 16px;/* Збільшення тексту */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.row input {
+    width: calc(50% - 10px);
+}
+
+button[type="button"] {
+    flex-grow: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px !important; /* Заокруглення кнопок з пріоритетом */
+}
